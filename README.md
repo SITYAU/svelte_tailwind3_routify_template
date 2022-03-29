@@ -1,14 +1,25 @@
 # Meteor 2.7 Svelte Tailwindcss3 Routify
 
+### This is example/template shows how to setup Svelte, Tailwind and Routify in Meteor Framework.
+
+- Use Meteor 2.7+ framework
+- Svelte frontend
+- TailwindCSS 3.0 for style
+- Routify for routing
+
+```console
 meteor create --svelte [project name]
 
 meteor update —release 2.7
+```
 
 ——————————————————————
 
 ## Tailwindcss 3.0
 
+```console
 meteor npm install tailwindcss@latest postcss@latest postcss-load-config@latest autoprefixer@latest
+```
 
 Add to [/client/main.css]:
 
@@ -46,8 +57,10 @@ module.exports = {
 
 ## Routify
 
+```console
 meteor npm install --save @roxi/routify
 meteor npm install npm-run-all
+```
 
 package.json:
 
@@ -63,8 +76,7 @@ package.json:
 },
 ```
 
-App.svelte:
-// Router Plugin - Routify
+Modify App.svelte as:
 
 ```svelte
 <script>
