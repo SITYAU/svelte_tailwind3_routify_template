@@ -53,7 +53,7 @@ package.json:
 
 ```json
 "scripts": {
-"start": "run-p start:\*",
+"start": "run-p start:*",
 "start:meteor": "meteor run",
 "start:routify": "routify",
 "build": "routify -b",
@@ -66,7 +66,12 @@ package.json:
 App.svelte:
 // Router Plugin - Routify
 
-```js
+```svelte
+<script>
 import { Router } from "@roxi/routify";
 import { routes } from "../routify/routes.js";
+</script>
+
+<Router {routes}/>
+
 ```
